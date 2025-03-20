@@ -1,4 +1,3 @@
-// OperationFactory.java
 package com.hse.factory;
 
 import com.hse.domain.Operation;

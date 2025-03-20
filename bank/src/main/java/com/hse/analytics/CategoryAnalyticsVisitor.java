@@ -28,7 +28,7 @@ public class CategoryAnalyticsVisitor implements AnalyticsVisitor<Map<String, Do
     public void visit(Operation operation) {
         if (operation.getType() == targetType && isInPeriod(operation.getDate())) {
             String categoryId = operation.getCategoryId();
-            String categoryName = categoryFacade.getCategoryById(categoryId).getName();  // Получаем имя категории
+            String categoryName = categoryFacade.getCategoryById(categoryId).getName(); 
             categoryStats.merge(categoryName, operation.getAmount(), Double::sum);
         }
     }

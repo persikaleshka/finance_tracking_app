@@ -2,7 +2,7 @@ package com.hse.analytics;
 
 public class AnalyticsReport<T> {
     private final String title;
-    private final T data;  // Теперь data имеет корректный параметр типа
+    private final T data;  
 
     public AnalyticsReport(String title, T data) {
         this.title = title;
@@ -10,7 +10,7 @@ public class AnalyticsReport<T> {
     }
 
     public String getTitle() { return title; }
-    public T getData() { return data; }  // Исправлено: теперь getData() возвращает T
+    public T getData() { return data; }  
 
     @Override
     public String toString() {

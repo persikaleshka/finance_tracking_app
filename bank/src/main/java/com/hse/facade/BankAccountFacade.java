@@ -39,12 +39,4 @@ public class BankAccountFacade {
         account.setBalance(account.getBalance() + amount);
     }
 
-    // public void recalculateBalance(String accountId) {
-    // double correctBalance = operationFacade.getOperationsByAccount(accountId)
-    //     .stream()
-    //     .mapToDouble(op -> op.getType() == OperationType.INCOME ? op.getAmount() : -op.getAmount())
-    //     .sum();
-    // BankAccount account = getAccountById(accountId);
-    // account.setBalance(correctBalance);
-//}
 }

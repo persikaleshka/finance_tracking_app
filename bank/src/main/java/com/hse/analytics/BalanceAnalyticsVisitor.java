@@ -4,7 +4,7 @@ import com.hse.domain.Operation;
 import com.hse.domain.OperationType;
 import java.time.LocalDate;
 
-public class BalanceAnalyticsVisitor implements AnalyticsVisitor<Double> {  // Указываем Double
+public class BalanceAnalyticsVisitor implements AnalyticsVisitor<Double> {  
     private double totalIncome = 0;
     private double totalExpense = 0;
     private final LocalDate startDate;
@@ -27,7 +27,7 @@ public class BalanceAnalyticsVisitor implements AnalyticsVisitor<Double> {  // �
     }
 
     @Override
-    public AnalyticsReport<Double> getReport() {  // Исправлено: добавлен параметр Double
+    public AnalyticsReport<Double> getReport() {  
         return new BalanceDifferenceReport(
             totalIncome - totalExpense, 
             startDate, 

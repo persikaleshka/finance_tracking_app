@@ -11,12 +11,10 @@ public class Category {
         this.name = name;
     }
 
-    // Геттеры
     public String getId() { return id; }
     public OperationType getType() { return type; }
     public String getName() { return name; }
 
-    // Сеттеры
     public void setType(OperationType type) { this.type = type; }
     public void setName(String name) { this.name = name; }
 }

@@ -2,7 +2,7 @@ package com.hse.analytics;
 
 import java.time.LocalDate;
 
-public class BalanceDifferenceReport extends AnalyticsReport<Double> {  // Добавлено <Double>
+public class BalanceDifferenceReport extends AnalyticsReport<Double> {  
     private final LocalDate startDate;
     private final LocalDate endDate;
 

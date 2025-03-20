@@ -22,6 +22,11 @@ public class AnalyticsService {
         return (BalanceDifferenceReport) visitor.getReport();
     }
 
+    public double calculateBalanceDifference(LocalDate start, LocalDate end) {
+        BalanceDifferenceReport report = getBalanceDifference(start, end);
+        return (double) report.getData();  
+    }
+
     public CategoryGroupReport getCategoryReport(OperationType type, 
                                                 LocalDate start, 
                                                 LocalDate end) {
@@ -30,7 +35,6 @@ public class AnalyticsService {
         return (CategoryGroupReport) visitor.getReport();
     }
 
-    // ✅ Исправленный метод processOperations с параметризацией <T>
     private <T> void processOperations(AnalyticsVisitor<T> visitor, 
                                        LocalDate start, 
                                        LocalDate end) {

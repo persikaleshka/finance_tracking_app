@@ -36,7 +36,7 @@ public class Main {
             System.out.print("Введите номер команды: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Очистка буфера
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:

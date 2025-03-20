@@ -11,12 +11,10 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    // Геттеры
     public String getId() { return id; }
     public String getName() { return name; }
     public double getBalance() { return balance; }
 
-    // Сеттеры (только для изменяемых полей)
     public void setName(String name) { this.name = name; }
     public void setBalance(double balance) { this.balance = balance; }
 }
