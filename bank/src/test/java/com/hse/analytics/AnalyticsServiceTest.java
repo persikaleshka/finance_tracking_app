@@ -1,7 +1,6 @@
-package com.hse;
+package com.hse.analytics;
 
 import com.hse.domain.Operation;
-import com.hse.analytics.*;
 import com.hse.domain.OperationType;
 import com.hse.facade.OperationFacade;
 import com.hse.facade.CategoryFacade;

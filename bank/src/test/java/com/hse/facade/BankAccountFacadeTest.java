@@ -1,7 +1,6 @@
-package com.hse;
+package com.hse.facade;
 
 import com.hse.domain.BankAccount;
-import com.hse.facade.BankAccountFacade;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,8 +1,6 @@
-package com.hse;
+package com.hse.facade;
 
 import com.hse.domain.Operation;
-import com.hse.facade.BankAccountFacade;
-import com.hse.facade.OperationFacade;
 import com.hse.domain.OperationType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
